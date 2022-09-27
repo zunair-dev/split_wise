@@ -1,4 +1,6 @@
 class Transaction < ApplicationRecord
+  CURRENCY = %w[PK USD INR]
+
   validates_presence_of :amount
 
   enum status: {
